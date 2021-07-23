@@ -1,0 +1,19 @@
+<hr>
+<div class="animated fadeIn fast card-columns card-container">
+    <div *ngFor='let cuadro of cuadros' class="card" style="width: 18rem;">
+        <img [src]="cuadro.foto" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{cuadro.nombre}}</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{cuadro.dimencion}}</li>
+            <li class="list-group-item">{{cuadro.tecnica}}</li>
+            <li class="list-group-item">{{cuadro.precio |currency}}</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="card-link">Album: {{cuadro.album}}</a>
+            <a href="#" class="card-link">Comprar</a>
+        </div>
+    </div>
+</div>

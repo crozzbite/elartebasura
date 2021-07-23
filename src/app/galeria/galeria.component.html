@@ -1,0 +1,41 @@
+<hr>
+
+<div *ngIf="mostrar == 0 " class="container-galeria container">
+    <!-- (click) evnto para la lightbox item es lo k quiero darle a el .ts creo que sera un componente o elemento  -->
+    <!-- <div class="  item-galeria col-4" *ngFor="let cuadro of Cuadro" (click)="modal($event, cuadro.ids)"> -->
+        
+    <div class=" animated fadeIn fast item-galeria col-12 col-md-4" *ngFor="let cuadro of Cuadro" (click)="modal($event, cuadro.ids)">
+        <app-loading style="object-fit: contain;" *ngIf="loading"></app-loading>
+        <img class="img-galeria animated fadeIn " [src]="cuadro.foto" alt="">
+
+    </div>
+</div>
+
+<div *ngIf="mostrar != 0 ">
+    <div class="container-galeria container animated fadeIn fast">
+        
+        <div class="col-11 col-md-9">
+    
+            <img class="img-modal" [src]="Cuadro[mostrar-1].foto" alt="">
+        </div>
+
+        <div class="col-11 col-md-3 datos animated fadeIn  fast" style="color: white;">
+            <hr>
+            <h1>Titulo: <br> {{Cuadro[mostrar-1].nombre|titlecase}}</h1>
+            <hr>
+            <h2>Dimensión: <br> {{Cuadro[mostrar-1].dimencion}}</h2>
+            <hr>
+            <h2>Técnica: <br>{{Cuadro[mostrar-1].tecnica|titlecase}}</h2>
+            <hr>
+            <h2>Álbum: <br>{{Cuadro[mostrar-1].album|titlecase}}</h2>
+            <hr>
+            <button class="btn btn-dark" text="atras" (click)="atras()">Atrás</button>
+            <!-- <button class="btn btn-dark" text="Siguiente" (click)="Siguiente($event, cuadro.ids)">Siguiente</button> -->
+        </div>
+    </div>
+</div>
+
+<!-- para comilarlo ng build --prod -->
+
+
+<app-footer></app-footer>

@@ -1,0 +1,38 @@
+.navar-titular {
+    background-color: rgba(0, 0, 0, .5);
+    margin-top: 10px;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.sub-navbar:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.sub-navbar,
+a {
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+.sub-navbar,
+a:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transition: 500ms;
+    color: green;
+}
+
+.nav-item {
+    margin-left: 50px;
+}
+
+.navbar-nav {
+    margin-left: 100px;
+}
+
+.dropdown-menu {
+    background-color: black;
+}

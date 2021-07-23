@@ -1,0 +1,41 @@
+<hr>
+
+<!-- html esta bien  y el ts tambien busca el css falta mandar datos -->
+<div class="contenedor animated fadeIn ">
+    <div class="form-header">
+        <h1 align="center">Contáctanos</h1>
+        <br>
+        <h6 style="font-size: 20px;">Mándanos un mensaje a nuestro Email y lo responderemos a la brevedad, también puedes escribirnos a nuestras redes sociales y <a class="whatsapp" href="https://api.whatsapp.com/send?phone=529511860784"><span class="icon-whatsapp"></span></a>, responderemos
+            enseguida todas tus dudas.</h6>
+    </div>
+    <p style="font-size: 16px; color: sandybrown;">(Este formulario esta <strong style="color:yellow;">DESHABILITADO TEMPORALMENTE</strong> debido a que estamos trabajando para mejorar su experiencia de usuario, lamentamos las molestias que esto pueda ocasionarle. <br> También puede contactarnos a
+        través de alguna de nuestras redes sociales en el pie de pagina.)</p>
+    <div class="formato">
+        <h3>Contacta El Arte es Basura:</h3>
+        <h4>Los campos con * son obligatorios.</h4>
+        <!-- <form (ngSubmit)="onSubmit" #contactForm="ngForm"> -->
+        <form action="Formato.php" method="post">
+            <!-- <form  #contactForm (ngSubmit)="onSubmit(contactForm)" > -->
+                <!-- aun tengo que poner la funcion onSubmit -->
+            <input type="text" class="form-input" id="Nombre" placeholder="Escribe tu nombre"  required="" >
+
+
+            <input type="email" class="form-input" id="Email" placeholder="Escribe tu correo *" required="" >
+
+
+            <input type="phone" class="form-input" id="Telefono" placeholder="Escribe tu Telefono" >
+
+
+            <textarea name="mensaje" class="form-input" id="Mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje * " required="" ></textarea>
+            <br>
+
+            <input type="submit" class="btn-submit btn btn-dark" name="enviar" required="" >
+        </form>
+        <!-- no se para que es el requiered, si no jala quitalo  -->
+        <?php 
+        include(Formato.php);
+        ?>
+    </div>
+</div>
+
+<app-footer></app-footer>

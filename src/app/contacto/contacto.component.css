@@ -1,0 +1,74 @@
+.contenedor {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 3px;
+    padding: 10px 5px 10px 5px;
+    font-size: 25px;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-style: solid;
+    border-color: gray;
+}
+
+.form-header {
+    width: 100%;
+    text-align: justify;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.form-label {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.formato {
+    width: 100%;
+    border-style: solid;
+    border-color: gray;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.form-input {
+    background: rgba(10, 10, 100, .7);
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* .btn-submit {
+    position: relative;
+    background-color: #0936E8;
+    font-size: 25px;
+    border-style: none;
+    border-radius: 8%;
+    padding: 5px;
+    color: white;
+    margin-left: 45%;
+    margin-top: 10px;
+    cursor: pointer;
+    width: fill;
+} */
+
+.FAQ {
+    text-align: justify;
+    list-style: square;
+    padding: 5%;
+}
+
+.FAQ-list {
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+h6 a {
+    text-decoration: none;
+    color: green;
+}

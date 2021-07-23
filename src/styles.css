@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* @font-face {
+    font-family: fontawesome-webfont;
+    src: url(src\assets\libs\fonts\fontawesome-webfont.woff2);
+} */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url(src\assets\libs\fonts\icomoon.woff);
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+}
+
+.icon-whatsapp:before {
+    content: "\ea93";
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+}
+
+
+/* @import url(C:\Users\HP\Angular\el-arte-basura\El-arte-es-basura\src\assets\libs\css\font-awesome.css); */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.img-logo {
+    width: 120px;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+body {
+    background-image: url(src\assets\img\madera.jpg);
+    /* background-color: black; */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

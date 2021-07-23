@@ -1,0 +1,30 @@
+.card-container {
+    padding-top: 50px;
+    z-index: 100;
+}
+
+
+/* .grid-container {
+    width: 30%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 30%;
+}
+
+
+/* 
+.opciones-imprecion,
+a,
+h5 {
+    font-size: 25px;
+    
+    
+} */
+
+
+/* .grid-container>div>h6>a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+} */
