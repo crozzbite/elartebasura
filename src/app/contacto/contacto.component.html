@@ -17,24 +17,22 @@
         <form action="Formato.php" method="post">
             <!-- <form  #contactForm (ngSubmit)="onSubmit(contactForm)" > -->
                 <!-- aun tengo que poner la funcion onSubmit -->
-            <input type="text" class="form-input" id="Nombre" placeholder="Escribe tu nombre"  required="" >
+            <input type="text" class="form-input" id="Nombre" placeholder="Escribe tu nombre"  required >
 
 
-            <input type="email" class="form-input" id="Email" placeholder="Escribe tu correo *" required="" >
+            <input type="email" class="form-input" id="Email" placeholder="Escribe tu correo *" required >
 
 
             <input type="phone" class="form-input" id="Telefono" placeholder="Escribe tu Telefono" >
 
 
-            <textarea name="mensaje" class="form-input" id="Mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje * " required="" ></textarea>
+            <textarea name="mensaje" class="form-input" id="Mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje * " required ></textarea>
             <br>
 
-            <input type="submit" class="btn-submit btn btn-dark" name="enviar" required="" >
+            <input type="submit" class="btn-submit btn btn-dark" name="enviar"  >
         </form>
-        <!-- no se para que es el requiered, si no jala quitalo  -->
-        <?php 
-        include(Formato.php);
-        ?>
+       
+       
     </div>
 </div>
 
